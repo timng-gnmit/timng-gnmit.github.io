@@ -1,1 +1,1 @@
-# timng-gnmit.github.io
+# Timothy Ng's website
