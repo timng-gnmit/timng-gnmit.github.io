@@ -21,11 +21,12 @@
 title: Timothy Ng
 email: timothy.ng681@gmail.com
 description: >- # Timothy Ng's Website
-
+  Timothy Ng's Website
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "timng-gnmit.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: timng_gnmit
 github_username:  timng-gnmit
+linkedin_username: timothy-ng-047188142
 
 # Build settings
 # https://github.com/learning-zone/website-templates
