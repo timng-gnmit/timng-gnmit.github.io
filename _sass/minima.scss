@@ -19,10 +19,10 @@ $spacing-unit:     30px !default;
 // hf = header-footer
 $text-color:       #000000 !default;
 $hf-text-color:    #ffffff !default;
-$background-color: #b5b5b5 !default;
+$background-color: #e3e3e3 !default;
 $header-color:     #272727 !default;
 $footer-color:     #272727 !default;
-$link-color:       #9d3bf8 !default;
+$link-color:       #a353fc !default;
 $hf-link-color:    #8ff1d9 !default;
 
 $grey-color:       #828282 !default;
@@ -32,7 +32,7 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    1000px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;

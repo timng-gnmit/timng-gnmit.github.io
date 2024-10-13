@@ -9,7 +9,10 @@
   color: $hf-text-color;
 
   // Positioning context for the mobile navigation icon
-  position: relative;
+  // sticky positioning with top=0 z-index=999 to keep it at the top of the page when scrolling
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .site-title {
@@ -31,7 +34,7 @@
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
-  color: $hf-text-color;
+  color: $text-color;
   .nav-trigger {
       display: none;
   }
@@ -76,7 +79,7 @@
       line-height: 0;
       padding-top: 10px;
       text-align: center;
-
+      
       > svg {
         fill: $grey-color-dark;
       }
@@ -95,6 +98,7 @@
     .page-link {
       display: block;
       padding: 5px 10px;
+      color: $text-color;
 
       &:not(:last-child) {
         margin-right: 0;
@@ -123,6 +127,7 @@
 
 .contact-list,
 .social-media-list {
+  color: $hf-text-color;
   list-style: none;
   margin-left: 0;
 }
