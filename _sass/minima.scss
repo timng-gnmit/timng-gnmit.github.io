@@ -10,11 +10,20 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #111 !default;
-$background-color: #e9ffed !default;
-$header-color:     #b6ffc3 !default;
-$footer-color:     #b6ffc3 !default;
-$brand-color:      #8550f0 !default;
+// $text-color:       #111 !default;
+// $background-color: #e9ffed !default;
+// $header-color:     #b6ffc3 !default;
+// $footer-color:     #b6ffc3 !default;
+// $brand-color:      #8550f0 !default;
+
+// hf = header-footer
+$text-color:       #000000 !default;
+$hf-text-color:    #ffffff !default;
+$background-color: #b5b5b5 !default;
+$header-color:     #272727 !default;
+$footer-color:     #272727 !default;
+$link-color:       #9d3bf8 !default;
+$hf-link-color:    #8ff1d9 !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
