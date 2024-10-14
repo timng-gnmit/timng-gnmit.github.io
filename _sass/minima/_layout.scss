@@ -47,6 +47,10 @@
     color: $hf-link-color;
     line-height: $base-line-height;
   }
+  
+  .resume-link &:visited {
+    color: $hf-text-color;
+  }
 
   .page-link {
     color: $hf-text-color;

@@ -1,7 +1,7 @@
 what are you doing here? this is just how i set up my website
 
 latest updates:
-- resume button uploaded; opens in new tab
+- resume colors worked in local but not before; hopefully this works now
 
 open a pdf in browser by using
 ```
