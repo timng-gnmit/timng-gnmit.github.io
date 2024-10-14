@@ -113,6 +113,10 @@ a {
     color: $text-color;
     text-decoration: underline;
   }
+
+  .resume-link {
+    color: $hf-link-color;
+  }
   
   .contact-list &:not(hover) {
     color: $hf-link-color;
