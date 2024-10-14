@@ -43,6 +43,11 @@
     display: none;
   }
 
+  .resume-link {
+    color: $hf-link-color;
+    line-height: $base-line-height;
+  }
+
   .page-link {
     color: $hf-text-color;
     line-height: $base-line-height;
@@ -103,6 +108,13 @@
       &:not(:last-child) {
         margin-right: 0;
       }
+      margin-left: 20px;
+    }
+
+    .resume-link {
+      display: block;
+      padding: 5px 10px;
+      color: $link-color;
       margin-left: 20px;
     }
   }
