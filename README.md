@@ -1,7 +1,7 @@
 what are you doing here? this is just how i set up my website
 
 latest updates:
-- respaced footer
+- added icon
 
 open a pdf in browser by using
 ```
