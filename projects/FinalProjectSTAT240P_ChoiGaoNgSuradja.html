@@ -10,8 +10,8 @@
 <link href="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="author" content="Harry Choi, Kenny Gao, Timothy Ng, Danny Suradja">
-  <title>STAT 240P Final Project</title>
+  <meta name="author" content="Hyun Woo (Harry) Choi, Shoudao (Kenny) Gao, Timothy Ng, Danny Suradja">
+  <title>Optimal Soccer Position Predictor</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,12 +327,12 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">STAT 240P Final Project</h1>
+  <h1 class="title">Optimal Soccer Position Predictor</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Harry Choi, Kenny Gao, Timothy Ng, Danny Suradja 
+Hyun Woo (Harry) Choi, Shoudao (Kenny) Gao, Timothy Ng, Danny Suradja 
 </div>
 </div>
 </div>
@@ -364,10 +364,14 @@ Harry Choi, Kenny Gao, Timothy Ng, Danny Suradja
 <ul>
 <li>Removed duplicate players (multiple FIFA games)</li>
 <li>Selected primary position</li>
-<li>Removed positions with low frequencies and missing data (goalkeepers)</li>
+<li>Removed positions with low frequencies (left/right wing back, center forward) and missing data (goalkeepers)</li>
 <li>Standardized the numerical data</li>
 </ul>
 </section>
+<section id="position-differences" class="slide level2">
+<h2>Position Differences</h2>
+
+<img data-src="formation_img.jpg" class="r-stretch quarto-figure-center"><p class="caption">From https://themastermindsite.com/2019/04/10/4-3-3-vs-4-1-4-1-tactical-flexibility/</p></section>
 <section id="data-balance" class="slide level2">
 <h2>Data Balance</h2>
 
@@ -424,37 +428,60 @@ Harry Choi, Kenny Gao, Timothy Ng, Danny Suradja
 <section id="lda-results" class="slide level2">
 <h2>LDA Results</h2>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>We achieved an overall predictive accuracy of 0.6472559.</p>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>We achieved an overall predictive accuracy of 0.6976479.</p>
 </section>
+<section id="linear-discriminants" class="slide level2">
+<h2>Linear Discriminants</h2>
+<div class="cell" data-layout-align="center">
+
+<div class="cell-output cell-output-stdout">
+<pre><code>                              LD1    LD2
+preferred_footRight         0.052  0.171
+height_cm                  -0.038  0.179
+weight_kg                  -0.031  0.177
+pace                        0.015 -0.130
+defending                  -1.934 -0.412
+shooting                    0.827  0.472
+passing                    -0.113 -0.413
+dribbling                   0.107  1.398
+skill_ball_control          0.072 -0.222
+skill_dribbling             0.107 -1.297
+mentality_positioning       0.427 -0.294
+skill_fk_accuracy          -0.105 -0.044
+attacking_crossing         -0.058 -0.550
+attacking_heading_accuracy  0.128  0.894</code></pre>
+</div>
+</div>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
 <section id="qda-results" class="slide level2">
 <h2>QDA Results</h2>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our Quadratic Discriminant Analysis model achieved an accuracy of 0.7024947.</p>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our Quadratic Discriminant Analysis model achieved an accuracy of 0.7024947.</p>
 </section>
 <section id="random-forest-results" class="slide level2">
 <h2>Random Forest Results</h2>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-11-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our random forest classifier achieved an accuracy of 0.7141126.</p>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our random forest classifier achieved an accuracy of 0.7141126.</p>
 </section>
 <section id="grouped-positions" class="slide level2">
 <h2>Grouped Positions</h2>
 <p>We grouped the different positions based on role similarity.</p>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
 <section id="lda-for-the-groups" class="slide level2">
 <h2>LDA for the Groups</h2>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our linear discriminant analysis model achieved a group accuracy of 0.7933001.</p>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our linear discriminant analysis model achieved a group accuracy of 0.7933001.</p>
 </section>
 <section id="qda-for-the-groups" class="slide level2">
 <h2>QDA for the Groups</h2>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our quadratic discriminant analysis model achieved a group accuracy of 0.8037063.</p>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our quadratic discriminant analysis model achieved a group accuracy of 0.8037063.</p>
 </section>
 <section id="random-forest-for-the-groups" class="slide level2">
 <h2>Random Forest for the Groups</h2>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our random forest model achieved a group accuracy of 0.8137562.</p>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-17-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our random forest model achieved a group accuracy of 0.8137562.</p>
 </section>
 <section id="discussion-model-performance" class="slide level2">
 <h2>Discussion: Model Performance</h2>
@@ -477,7 +504,7 @@ Table&nbsp;1: Test accuracies across the different models for the different pred
 <tbody>
 <tr class="odd">
 <td style="text-align: center;"><strong>Position</strong></td>
-<td style="text-align: center;">0.6472559</td>
+<td style="text-align: center;">0.6976479</td>
 <td style="text-align: center;">0.7024947</td>
 <td style="text-align: center;">0.7141126</td>
 </tr>
@@ -497,13 +524,13 @@ Table&nbsp;1: Test accuracies across the different models for the different pred
 <h2>Discussion: Random Forest Features</h2>
 <p>The random forest implementation in R also gives us an idea of which features are most important for distinguishing the positions</p>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-17-1.png" class="quarto-figure quarto-figure-center r-stretch" width="1248"></section>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-18-1.png" class="quarto-figure quarto-figure-center r-stretch" width="1248"></section>
 <section id="conclusion" class="slide level2 scrollable">
 <h2>Conclusion</h2>
 <ol type="1">
 <li>The random forest model makes the best predictions for both classification tasks.</li>
 <li>Defending seems like an important statistic for determining optimal position.</li>
-<li>The left and right wing positions are difficult to classify.</li>
+<li>Every model seems to struggle differentiating wingers (LW, RW) from side midfielders (RM, LM), often predicting the latter.</li>
 </ol>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
