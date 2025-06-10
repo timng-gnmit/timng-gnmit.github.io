@@ -433,7 +433,6 @@ Hyun Woo (Harry) Choi, Shoudao (Kenny) Gao, Timothy Ng, Danny Suradja
 <section id="linear-discriminants" class="slide level2">
 <h2>Linear Discriminants</h2>
 <div class="cell" data-layout-align="center">
-
 <div class="cell-output cell-output-stdout">
 <pre><code>                              LD1    LD2
 preferred_footRight         0.052  0.171
@@ -452,40 +451,46 @@ attacking_crossing         -0.058 -0.550
 attacking_heading_accuracy  0.128  0.894</code></pre>
 </div>
 </div>
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+</section>
+<section id="lda-separation-example" class="slide level2">
+<h2>LDA Separation Example</h2>
+<p>Recall that the first LD had a high negative coefficient for defending and a high positive coefficient for shooting.</p>
+
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
 <section id="qda-results" class="slide level2">
 <h2>QDA Results</h2>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our Quadratic Discriminant Analysis model achieved an accuracy of 0.7024947.</p>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-11-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our Quadratic Discriminant Analysis model achieved an accuracy of 0.7024947.</p>
 </section>
 <section id="random-forest-results" class="slide level2">
 <h2>Random Forest Results</h2>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our random forest classifier achieved an accuracy of 0.7141126.</p>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our random forest classifier achieved an accuracy of 0.7141126.</p>
 </section>
 <section id="grouped-positions" class="slide level2">
 <h2>Grouped Positions</h2>
 <p>We grouped the different positions based on role similarity.</p>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
 <section id="lda-for-the-groups" class="slide level2">
 <h2>LDA for the Groups</h2>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our linear discriminant analysis model achieved a group accuracy of 0.7933001.</p>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our linear discriminant analysis model achieved a group accuracy of 0.7933001.</p>
 </section>
 <section id="qda-for-the-groups" class="slide level2">
 <h2>QDA for the Groups</h2>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-15-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our quadratic discriminant analysis model achieved a group accuracy of 0.8037063.</p>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our quadratic discriminant analysis model achieved a group accuracy of 0.8037063.</p>
 </section>
 <section id="random-forest-for-the-groups" class="slide level2">
 <h2>Random Forest for the Groups</h2>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-17-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our random forest model achieved a group accuracy of 0.8137562.</p>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-18-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Our random forest model achieved a group accuracy of 0.8137562.</p>
 </section>
 <section id="discussion-model-performance" class="slide level2">
 <h2>Discussion: Model Performance</h2>
-<p><a href="#/discussion-model-performance" class="quarto-xref">Table&nbsp;1</a> contains the test accuracies presented in the previous slides. - The random forest model outperformed LDA and QDA in both position and group predictions</p>
+<p><a href="#/discussion-model-performance" class="quarto-xref">Table&nbsp;1</a> contains the test accuracies presented in the previous slides.</p>
+<p>The random forest model outperformed LDA and QDA in both position and group predictions.</p>
 <div id="tbl-acc" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-tbl">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-acc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -524,7 +529,7 @@ Table&nbsp;1: Test accuracies across the different models for the different pred
 <h2>Discussion: Random Forest Features</h2>
 <p>The random forest implementation in R also gives us an idea of which features are most important for distinguishing the positions</p>
 
-<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-18-1.png" class="quarto-figure quarto-figure-center r-stretch" width="1248"></section>
+<img data-src="FinalProjectSTAT240P_ChoiGaoNgSuradja_files/figure-revealjs/unnamed-chunk-19-1.png" class="quarto-figure quarto-figure-center r-stretch" width="1248"></section>
 <section id="discussion-random-forest-feature-importance-by-position" class="slide level2">
 <h2>Discussion: Random Forest Feature Importance by Position</h2>
 <p>We can also look at which features are important for distinguishing specific positions. <img data-src="feature_importance_by_position.png"></p>
