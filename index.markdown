@@ -13,7 +13,7 @@ title: Home
 
 I am currently pursuing my Master of Data Science at the University of California, Irvine and expect to graduate in December 2025. I received my Bachelor of Science in Mathematics from the University of California, Davis in June 2023.
 
-If you're curious about what I've been up to, check out my <a href="#projects">projects</a> or my [GitHub profile](https://github.com/timng-gnmit). Thanks for coming by!
+If you're curious about what I've been up to, check out my <a href="./projects.html">projects</a> or my [GitHub profile](https://github.com/timng-gnmit). Thanks for coming by!
 
 <h2 id="projects" style="text-align: left;">Project Highlights</h2>
 - [Latent Dirichlet Allocation of the BBC News Archive](https://github.com/timng-gnmit/CS275P-LDA)
