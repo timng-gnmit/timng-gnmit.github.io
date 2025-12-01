@@ -27,9 +27,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "timng-gnmit.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # socials
-twitter_username: timng_gnmit
+instagram_username: timng_gnmit
 github_username:  timng-gnmit
-linkedin_username: timothy-ng-047188142
+linkedin_username: timothy-ng-data
 
 # Build settings
 # https://github.com/learning-zone/website-templates

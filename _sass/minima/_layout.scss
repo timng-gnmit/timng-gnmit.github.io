@@ -29,6 +29,11 @@
 //    color: $grey-color-dark;
     color: $hf-text-color;
   }
+
+  &,
+  &:hover {
+    color: $hf-link-color;
+  }
 }
 
 .site-nav {
