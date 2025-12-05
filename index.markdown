@@ -16,8 +16,9 @@ I am currently pursuing my Master of Data Science at the University of Californi
 If you're curious about what I've been up to, check out my <a href="./projects.html">projects</a> or my [GitHub profile](https://github.com/timng-gnmit). Thanks for coming by!
 
 <h2 id="projects" style="text-align: left;">Project Highlights</h2>
-- [Latent Dirichlet Allocation of the BBC News Archive](https://github.com/timng-gnmit/CS275P-LDA)
-- [LDA and QDA vs Random Forests for classification of Optimal Soccer Positions](http://timng-gnmit.github.io/projects/FinalProjectSTAT240P_ChoiGaoNgSuradja.html)
+- Soccer Analytics Dashboard ([git repo](https://github.com/TrilemmaFoundation/UCI-MDS-F25-Soccer))
+- Latent Dirichlet Allocation of the BBC News Archive ([git repo](https://github.com/timng-gnmit/CS275P-LDA))
+- LDA and QDA vs Random Forests for classification of Optimal Soccer Positions ([slides](http://timng-gnmit.github.io/projects/FinalProjectSTAT240P_ChoiGaoNgSuradja.html))
 <!--
 | Project | Link |
 |:-------|:----:|
