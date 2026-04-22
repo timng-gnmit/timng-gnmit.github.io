@@ -8,7 +8,7 @@ title: Home
 <h1 style="text-align: left;"> Hello! I'm Tim.
   <div id="image-div" style="float:right;">
     <!-- <span style="float:right;"> -->
-      <img id="tim-pic" src="https://raw.githubusercontent.com/timng-gnmit/timng-gnmit/refs/heads/main/tim.png" alt="Timothy Ng" width="200" hspace="50"/>
+      <img id="tim-pic" src="https://raw.githubusercontent.com/timng-gnmit/timng-gnmit.github.io/refs/heads/main/assets/tim.png" alt="Timothy Ng" width="200" hspace="50"/>
     <!-- </span> -->
   </div>
 </h1> 
